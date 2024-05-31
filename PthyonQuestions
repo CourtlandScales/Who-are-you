@@ -1,0 +1,30 @@
+import math
+
+name = input("Enter username: ")
+
+Gender = input("What is your gender? ")
+
+age = int(input("Enter age: "))
+
+height = float(input("How tall are you? (enter in centimeter): "))
+
+Weight = float(input("How much do you weight(in pounds)"))
+
+Feet = height / 30.48
+
+rounded_number = round(Feet, 1)
+
+Kilograms = Weight * 0.39370079
+
+rounded_Weight = round(Kilograms, 1)
+
+
+print("Your name is: " + name)
+
+print("You are: " + str(age) + " Years old" )
+
+print("Your gender is: " + Gender)
+
+print("You are " + str(height) + "cm tall & you are " + str(rounded_number) + "ft")
+
+print("You are " + str(Weight) + "Ibs & you are " + str(rounded_Weight)+ "Kg")
